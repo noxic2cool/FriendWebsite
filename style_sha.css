@@ -1,0 +1,225 @@
+*	{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'BioRhyme', serif;
+	}	
+
+/* section styles */
+section	{
+	position: absolute;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+}
+
+section video	{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+}
+
+section div h3 {
+	text-align: center;
+	color: #FFD700;
+	font-family: 'BioRhyme', serif;
+	margin-top: 247px;
+	font-size: 25px;
+	position: relative;
+	z-index: 10;
+	}
+
+section div h1 {
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Squada One', cursive;
+	font-size: 10em;
+	margin-top: 5px;
+	position: relative;
+	z-index: 10;
+
+    text-shadow: 1px 1px 1px #b7b4b0,
+        1px 2px 1px #b7b4b0,
+        1px 3px 1px #b7b4b0,
+        1px 4px 1px #b7b4b0,
+        1px 5px 1px #b7b4b0,
+        1px 6px 1px #b7b4b0,
+        1px 7px 1px #b7b4b0,
+        1px 8px 1px #b7b4b0,
+        1px 9px 1px #b7b4b0,
+        1px 10px 1px #b7b4b0,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+	}
+
+section div p {
+	color: #FFD700;
+	font-family: 'BioRhyme', serif;
+	position: relative;
+	z-index: 10;
+	}
+
+section div .audio	{
+	position: relative;
+	z-index: 10;
+}
+
+.social
+{
+	position: absolute;
+	z-index: 10;
+	bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: transitionIn 2s;
+}
+.social li
+{
+	list-style: none;
+}
+.social li a
+{
+	display: inline-block;
+	margin-right: 20px;
+	filter: invert(1);
+}
+
+/*.ins	{
+	width: 30%;
+}*/
+/* overlay styles */
+
+.overlay   {
+	background: rgb(0, 0, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+}
+
+/* container styles */
+
+.container {
+	width: 350px;
+	margin: 20px auto;
+	/*margin-top: -75px;*/
+	}
+	
+.container a {
+	text-decoration: none;
+	font-size: 30px;
+	color: #FFD700;
+	margin-left: 60px;
+	font-family: 'Squada One', cursive;
+	position: relative;
+	z-index: 10;
+	animation: slideIn 5s;
+	}
+
+.container a:visited {
+	color: #705d1e;
+	}
+
+.container a:hover {
+	text-align: center;
+	color: #FFD700;
+	font-family: 'Squada One', cursive;
+	text-shadow: 1px 1px 1px #a3872a,
+        1px 2px 1px #a3872a,
+        1px 3px 1px #a3872a,
+        1px 4px 1px #a3872a,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+	}
+
+/* media styles */
+
+@media screen and (max-width: 540px) {
+	section div h1 {
+		font-size: 7em;
+	}
+	.audio	{
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+	.music {
+		display: none;
+	}
+	.overlay   {
+		background: rgb(0, 0, 0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		mix-blend-mode: overlay;
+	}
+	section	{
+		right: 0;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+	}
+
+	section video	{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.8;
+	}
+	.social
+	{
+		position: absolute;
+		z-index: 10;
+		bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: transitionIn 2s;
+	}
+	.social li a
+	{
+		display: inline-block;
+		margin-right: 20px;
+		filter: invert(1);
+	}
+}
+
+/* keyframes */
+
+@keyframes transitionIn {
+	from	{
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+
+	to	{
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+@keyframes slideIn {
+	from	{
+		opacity: 0;
+	}
+
+	to	{
+		opacity: 1;
+	}
+}
